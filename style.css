@@ -77,7 +77,7 @@ body{
 }
 
 #showcase{
-	background-image:url('../images/pozadie.jpg');
+	background-image:url('pozadie.jpg');
 	background-position:center right;
 	text-align: center;
 	width: 2543px;
