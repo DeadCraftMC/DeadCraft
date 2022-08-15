@@ -1,33 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="sk">
 <head>
-	<meta charset="UTF-8">
-	<title>DeadCraft</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MartinosTV">
+    <meta name="keywords" content="DeadCraft,minecraft,Survival">
+    <title>| DeadCraft</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Kalam&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Indie+Flower&family=Kalam&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+
 </head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <body>
-	<nav id="navbar">
-		<div class="container">
-			<ul>
-				<li><a href="">Domov</a></li>
-				<li><a href="">Pravidla</a></li>
-				<li><a href="">Novinky</a></li>
-				<li><img src="images/DeadCraft.png" alt=""></li>
-				<li><a href="https://czech-craft.eu/server/deadcraft-9289/vote/">Hlasovaní</a></li>
-				<li><a href="">Ateam</a></li>
-				<li><a href="Kontakt.html">Kontakt</a></li>
-			</ul>
-		</div>
-	</nav>
-	<section id="showcase">
-		<div class="container">
-			<h1 id="kontakt">IP: 82.208.17.40:27779</h1>
-		</div>
-	</section>
-	<div class="container">
-	</div>
-	<footer id="main-footer">
-		<p>DeadCraft</p>
-	</footer>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="logo.png" alt=""></a>    
+        <div id="mySidenav" class="sidenav">  
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <dl>
+                <dt><a href="index.html"><strong>O nás</strong></a></dt>
+                <dt><a >Store</a></dt>
+                    <dd>
+                        <a href="">VIP</a>
+                        <a href="">XXX</a>
+                    </dd>
+                <dt><a >Hlasovanie</a></dt>
+                    <dd>
+                        <a href="">CzechCraft</a>
+                        <a href="">CzechList</a>
+                    </dd>
+            </dl>
+
+        </div>
+        <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";}
+        
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";}
+
+        $(function(){ 
+     
+            $("dd").slideUp();
+            $("dt").click(function(){
+                $(this).parent().find('dd').slideUp(1000);
+                $(this).next().slideDown(1000);         
+                });
+            });
+
+        
+        </script>
+    </nav>
+    </header>
+
+    <section class="video">
+        <video autoplay loop muted plays-inline class="pozadie">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="nadpis">
+            <h1>DeadCraft</h1>
+            <a href="#">Užij si <strong>kvalitný Minecraft</strong> </a>
+        </div>
+    </section>
+
+    
+
+    <article>
+        <div class="cards">
+            <div class="card">
+                <a href=""><img src="discord.png" alt="https://discord.gg/kpFjcrxukG"></a>
+                <h2>Discord</h2>
+                <br>
+                <p>Potřebuješ poradit? zkontaktovat admina? Nebo se chceš jen seznámit s naší skvělou komunitou <br> a zdílet herní zážitky, tak to přijd k nám na discord <br> </p>
+            </div>
+            <div class="card">
+                <a href=""><img src="map.png" alt="http://82.208.17.22:25625/#"></a>
+                <h2>Dynmapa</h2>
+                <br>
+                <p>Hledáš místo pro svůj dům, nebo si se ztratil? Tak od toho tu máme dynmapu všech světů nacházejících se na našem serveru</p>
+            </div>
+            <div class="card">
+                <a href=""><img src="pravidla.png" alt="https://discord.gg/kpFjcrxukG"></a>
+                <h2>Pravidla</h2>
+                <br>
+                <p>Zde si můžeš přečíst pravidla, ušetříš tím práci adminům a nebudeš riskovat ban</p>
+            </div>
+        </div>
+
+    </article>
+
+
+
+    <footer>
+        <P>Designed by MartinosTV <br> © 2022 DeadCraft </P>
+    </footer>
+
+
+
+
+
+
+
 </body>
 </html>
